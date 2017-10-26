@@ -32,3 +32,10 @@ your machine.
    - pkg-config
    - usual compilation tools (GCC/G++, make, etc.)
  - libtinyxml-dev
+
+Build test container image
+--------------------------
+
+    cd tests
+    docker build -t eur0c.laas.fr:4567/humanoid-path-planner/hpp-util:14.04 .
+    docker push eur0c.laas.fr:4567/humanoid-path-planner/hpp-util:14.04

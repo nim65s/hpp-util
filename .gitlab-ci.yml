@@ -1,0 +1,14 @@
+image: eur0c.laas.fr:4567/humanoid-path-planner/hpp-util:14.04
+
+variables:
+    GIT_SSL_NO_VERIFY: "true"
+    GIT_SUBMODULE_STRATEGY: "recursive"
+
+build:
+    script:
+        - mkdir build
+        - cd build
+        - cmake ..
+        - make
+        - make test
+        - make install
